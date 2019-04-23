@@ -10,10 +10,16 @@ namespace lab_3 {
       get {
         return tekTst;
       } set {
+        Temp = value;
+      }
+    }
+    public int Temp{
+      get {
+        return tekTst;
+      } set {
         tekTst = nag1st * value;
       }
     }
-    public void CheckTemp() => Console.WriteLine("Текущая температура ствола {0}C", tekTst);
     public void ChangeSt() {
       tekTst = Tokrsr;
       Console.WriteLine("Ствол сменён. Текущая температура ствола {0}C", tekTst);

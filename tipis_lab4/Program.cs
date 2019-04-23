@@ -33,7 +33,7 @@ namespace lab_3 {
           }
         }
         else if (selected == "стоп") break;
-        else if (selected == "температура") pul.CheckTemp();
+        else if (selected == "температура") Console.WriteLine("Текущая температура ствола {0}C", pul.Temp);
         else if (selected == "ствол") pul.ChangeSt();
         else if (selected == "остановить") {
           Console.Write("Введите время паузы (в секундах): ");
